@@ -1,0 +1,100 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="main-nav container flex">
+        <a href="#" onclick="reload()" class="company-logo">
+          <img src="/logo1.png" alt="company logo" />
+        </a>
+        <div class="nav-links">
+          <ul class="flex">
+            <li
+              class="hover-link nav-item"
+              id="ipl"
+              onclick="onNavItemClick('ipl')"
+            >
+              IPL
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="finance"
+              onclick="onNavItemClick('finance')"
+            >
+              Finance
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="politics"
+              onclick="onNavItemClick('politics')"
+            >
+              Politics
+            </li>
+          </ul>
+        </div>
+        <div class="search-bar flex">
+          <input
+            id="search-text"
+            type="text"
+            class="news-input"
+            placeholder="e.g. Science"
+          />
+          <button id="search-button" class="search-button">Search</button>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <form id="form">
+        <fieldset>
+          <legend><h1>SignUp Form</h1></legend>
+          <center>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter Your Name"
+              required
+            /><br /><br />
+            <input
+              type="email"
+              id="mail"
+              placeholder="Enter Your Email"
+              required
+            /><br /><br />
+            <input
+              type="tel"
+              id="tel"
+              placeholder="Enter Contact Number"
+              required
+              minlength="10"
+              maxlength="10"
+            /><br /><br />
+            <input
+              type="password"
+              id="pass"
+              placeholder="Enter Your Password"
+              required
+            /><br /><br />
+            <input
+              type="password"
+              id="cpass"
+              placeholder="Enter Confirm Password"
+              required
+            /><br /><br />
+            <input type="checkbox" onclick="show()" id="check" /><b
+              >show password</b
+            ><br /><br />
+            <input type="submit" value="submit" />
+            <br />
+            <p>Already Register?</p>
+            <a href="/Login.html">Login here</a>
+          </center>
+        </fieldset>
+      </form>
+    </section>
+    <script src="signUp.js"></script>
+  </body>
+</html>
