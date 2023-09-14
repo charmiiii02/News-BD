@@ -42,5 +42,26 @@ Follow these steps to set up the "NEWS BD" platform locally:
 
 ## News BD overview
 
+## Welcome Page
+
+![Landing Page](https://github.com/charmiiii02/News-BD/raw/main/landingPage.png)
+
+
+## SignUp Page
+![Landing Page](https://github.com/charmiiii02/News-BD/raw/main/SignupPage.png)
+
+
+## Login Page
+
+![Landing Page](https://github.com/charmiiii02/News-BD/raw/main/loginPage.png)
+
+
+## Main Page
+
+![Landing Page](https://github.com/charmiiii02/News-BD/raw/main/mainPage.png)
+
+
+## Real-Time Serach Features
+![Landing Page](https://github.com/charmiiii02/News-BD/raw/main/NaveSearch.png)
 
 
