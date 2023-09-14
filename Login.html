@@ -1,0 +1,86 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="Login.css" />
+  </head>
+  <body>
+   
+    <nav>
+      <div class="main-nav container flex">
+        <a href="#" onclick="reload()" class="company-logo">
+          <img src="/logo1.png" alt="company logo" />
+        </a>
+        <div class="nav-links">
+          <ul class="flex">
+            <li
+              class="hover-link nav-item"
+              id="ipl"
+              onclick="onNavItemClick('ipl')"
+            >
+              IPL
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="finance"
+              onclick="onNavItemClick('finance')"
+            >
+              Finance
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="politics"
+              onclick="onNavItemClick('politics')"
+            >
+              Politics
+            </li>
+          </ul>
+        </div>
+        <div class="search-bar flex">
+          <input
+            id="search-text"
+            type="text"
+            class="news-input"
+            placeholder="e.g. Science"
+          />
+          <button id="search-button" class="search-button">Search</button>
+        </div>
+
+      </div>
+    </nav>
+
+
+        <section>
+          <form id="form">
+            <fieldset>
+              <legend><h1> Login </h1></legend>
+              <center>
+                <input
+                  type="email"
+                  id="mail"
+                  placeholder="Enter Your Email"
+                  required
+                />
+                <br><br>
+
+                <input
+                  type="password"
+                  id="pass"
+                  placeholder="Enter Your Password"
+                  required
+                /><br /><br />
+               <br />
+                <input type="submit" value="submit" />
+                <br />
+                <p>Not Register?</p>
+                <a href="/SignUp.html">Register here</a>
+              </center>
+            </fieldset>
+          </form>
+        </section>
+      
+
+    <script src="Login.js"></script>
+  </body>
+</html>

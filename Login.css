@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+:root {
+
+    --primary-text-color: #11202c;
+    --secondary-text-color:#146fb5;
+    --accent-color: #146fb5;
+    --accent-color-dark: #115081;
+
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-text-color);
+}
+
+p {
+    font-family: "roboto" sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.4res;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.flex {
+
+    display: flex;
+    align-items: center;
+}
+
+.container {
+
+    max-width: 1100px;
+    margin-inline: auto;
+    overflow: hidden;
+
+
+}
+
+nav {
+
+    background-color: #9dccee;
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    height: 97px;
+
+
+}
+
+.main-nav {
+
+    justify-content: space-between;
+    padding-block: 8px;
+
+}
+
+.company-logo img {
+
+    width: 100px;
+ 
+
+
+}
+
+.nav-links ul {
+
+    gap: 16px;
+}
+
+.hover-link {
+
+    cursor: pointer;
+}
+
+.hover-link:hover {
+
+    color: var(--secondary-text-color);
+}
+
+.hover-link:active {
+    color: red;
+}
+
+.nav-item.active{
+    color: var(--accent-color);
+}
+
+.search-bars {
+
+    height: 25px;
+    gap: 8px;
+
+}
+
+ #search-text{
+
+    width: 300px;
+    height: 34px;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #a9cae7;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif , sans-serif;
+}
+  
+.search-button {
+
+    background-color: var(--accent-color-dark);
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.search-button:hover {
+    background-color: var(--accent-color);
+
+}
+
+li{
+    padding: 15px;
+  }
+
+  main{
+    padding-block: 20px;
+    margin-top: 120px;
+  }
+
+  .cards-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+  }
+
+  .card{
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #bfd6ea;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+
+  .card:hover{
+
+    box-shadow: 1px 1px 8px #9cccf4;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+  }
+
+  .card-header img {
+
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-content{
+
+    padding: 12px;
+  }
+
+  .news-source{
+
+    margin-block: 12px;
+  }
+  
+  
+  /* Style for the navigation buttons */
+.nav-button {
+    background-color: var(--accent-color-dark);
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Hover effect */
+  .nav-button:hover {
+    background-color: var(--accent-color);
+  }
+  
+  section{
+
+    padding: 300;
+  }
+
+  /* Apply styles to the form container */
+#form {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the form legend */
+  legend {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Apply styles to the input fields */
+  input[type="email"],
+  input[type="password"] {
+    width: 300px;
+    height: 34px;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #a9cae7;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif , sans-serif;
+}
+  
+  /* Style for the "show password" checkbox */
+  #check {
+    margin-right: 5px;
+  }
+  
+  /* Apply styles to the submit button */
+  input[type="submit"] {
+    background-color: var(--accent-color-dark);
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Style for the "Not Register?" message and registration link */
+  p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+  }
+  
+  /* Apply styles when hovering over the submit button */
+  input[type="submit"]:hover {
+    background-color: var(--accent-color);
+  }
+  
